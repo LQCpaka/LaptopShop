@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================FAVICON - ICON WEBSITE================= -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- ================REMIXICON================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!-- ================SWIPER CSS================= -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- ================MAIN CSS================= -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VI GEAR</title>
+</head>
+
+<body>
+    <!-- ================HEADER================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="ri-computer-line"></i> VI GEAR
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Trang Chủ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-macbook-line"></i>
+                            <span>Nổi Bật</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-price-tag-line"></i>
+                            <span>Sản Phẩm</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-instance-line"></i>
+                            <span>Đánh Giá</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="product.html" class="nav__link">
+                            <i class="ri-menu-line"></i>
+                            <span>Thể Loại</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search Button -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!-- Login Button -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+
+                <!-- Cart Button-->
+                <a href="order.html"><i class="ri-shopping-cart-line" id="cart-button">:1</i></a>
+
+                <!-- Theme Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================SEARCH================= -->
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon""></i>
+            <input type=" search" placeholder="Bạn muốn tìm kiếm sản phẩm nào?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+    <!-- ================LOGIN================= -->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Đăng Nhập</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" id="login-email" placeholder="Nhập email của bạn" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Mật Khẩu</label>
+                    <input type="password" placeholder="Nhập mật khẩu của bạn" id="login-pass" class="login__input">
+                </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    Chưa có tài khoản? <a href="#">Đăng Ký</a>
+                </span>
+                <a href="#" class="login__forgot">
+                    Quên mật khẩu
+                </a>
+
+                <button type="submit" href="#" class="login__button button">Đăng Nhập</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+
+
+    <!-- ================MAIN================= -->
+    <main class="main">
+        <!-- ================HOME================= -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Brow & <br>
+                        Select E-lap
+                    </h1>
+
+                    <p class="home__description">
+                        Tìm kiếm chiếc máy tốt nhất theo sở thích của bạn, khám phá hàng
+                        trăm mẫu mã khác nhau, các hãng khác nhau.
+                    </p>
+
+                    <a href="#" class="button">Khám Phá Ngay</a>
+                </div>
+
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="img/a1.jpeg" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/a2.jpeg" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/a3.jpeg" alt="image" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/a4.jpeg" alt="image" class="home__img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= SERVICES ========================= -->
+        <section class="services section">
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="ri-truck-line"></i>
+                    <h3 class="services__title">FREE SHIP</h3>
+                    <p class="services__description">Cho mọi đơn hàng trên 1tr</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services__title">Bảo mật giao dịch</h3>
+                    <p class="services__description">100% bảo mật giao dịch</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="services__title">Hỗ trợ 24/7</h3>
+                    <p class="services__description">Luôn sẵn sàng lắng nghe bạn</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ========================= FEATURES ========================= -->
+        <section class="featured section" id="featured">
+            <h2 class="section__title">
+                Sản phẩm hot
+            </h2>
+            <div class="featured__container container">
+                <div class="featured__swiper swiper ">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 2 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 3 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 4 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 5 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 6 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 7 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 8 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 9 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <!-- 10 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="featured__img">
+
+                            <h2 class="featured__title">Mẫu Nổi Bật</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">11$</span>
+                                <span class="featured__price">99$</span>
+                            </div>
+
+                            <button class="button">Thêm Vào Giỏ</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-heart-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
+                    <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================= NEW PRODUCTS ========================= -->
+        <section class="new section" id="new">
+            <h2 class="section__title">
+                Sản Phẩm Mới
+            </h2>
+
+            <div class="new__container container">
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 2 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 4 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 5 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 6 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 7 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 8 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 9 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 10 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 2 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 4 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 5 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 6 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 7 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 8 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 9 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 10 -->
+                        <a href="" class="new__card swiper-slide">
+                            <img src="img/a1.jpeg" alt="image" class="new__img">
+                        
+
+                            <div>
+                                <h2 class="new__title">Sản Phẩm Mới</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$7.99</span>
+                                    <span class="new__price">$7.99</span>
+                                </div>
+
+                                <div class="new__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= TESTIMONIAL ========================= -->
+        <section class="testimonial section" id="testimonial">
+            <div class="testimonial">
+                <h2 class="section__title">
+                    Đánh Giá Người Dùng
+                </h2>
+
+                <div class="testimonial__container container">
+                    <div class="testimonial__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="testimonial__card swiper-slide">
+                                <img src="/img/avatar/avt1.png" alt="image" class="testimonial__img">
+                                <h2 class="testimonial__title">Rial Loz</h2>
+                                <p class="testimonial__description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni inventore fugiat beatae expedita excepturi veritatis repellendus illum perferendis alias, consequuntur exercitationem similique quos hic nihil, totam natus numquam, quae esse aspernatur cum tenetur officiis! Nisi voluptatem eum rem, culpa consectetur officia ab fugit dolore molestiae illo, neque, hic placeat provident!
+                                </p>
+                                <div class="testtimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+                            <article class="testimonial__card swiper-slide">
+                                <img src="/img/avatar/avt1.png" alt="image" class="testimonial__img">
+                                <h2 class="testimonial__title">Rial Loz</h2>
+                                <p class="testimonial__description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni inventore fugiat beatae expedita excepturi veritatis repellendus illum perferendis alias, consequuntur exercitationem similique quos hic nihil, totam natus numquam, quae esse aspernatur cum tenetur officiis! Nisi voluptatem eum rem, culpa consectetur officia ab fugit dolore molestiae illo, neque, hic placeat provident!
+                                </p>
+                                <div class="testtimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+                            <article class="testimonial__card swiper-slide">
+                                <img src="/img/avatar/avt1.png" alt="image" class="testimonial__img">
+                                <h2 class="testimonial__title">Rial Loz</h2>
+                                <p class="testimonial__description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni inventore fugiat beatae expedita excepturi veritatis repellendus illum perferendis alias, consequuntur exercitationem similique quos hic nihil, totam natus numquam, quae esse aspernatur cum tenetur officiis! Nisi voluptatem eum rem, culpa consectetur officia ab fugit dolore molestiae illo, neque, hic placeat provident!
+                                </p>
+                                <div class="testtimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+                            <article class="testimonial__card swiper-slide">
+                                <img src="/img/avatar/avt1.png" alt="image" class="testimonial__img">
+                                <h2 class="testimonial__title">Rial Loz</h2>
+                                <p class="testimonial__description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni inventore fugiat beatae expedita excepturi veritatis repellendus illum perferendis alias, consequuntur exercitationem similique quos hic nihil, totam natus numquam, quae esse aspernatur cum tenetur officiis! Nisi voluptatem eum rem, culpa consectetur officia ab fugit dolore molestiae illo, neque, hic placeat provident!
+                                </p>
+                                <div class="testtimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ================FOOTER================= -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="index.html" class="footer__logo">
+                    <i class="ri-book-3-line"></i> VI GEAR
+                </a>
+
+                <p class="footer__description">
+                    Tìm và khám phá công nghệ <br>
+                    Mẫu laptop đời mới <br>
+                    Gaming hay công việc <br>
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Giải Thưởng</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Chính Sách Bảo Mật</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Điều Khoản</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Blog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="" class="footer_link">Cộng Đồng</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Nhóm</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Trung Tâm Trợ Giúp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                TP. Hồ Chí Minh <br>
+                                Đường 3/2, Quận 10
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                pielysium@gmail.com <br>
+                                0356-991-750
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    
+                    <div class="footer_social">
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-discord-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-steam-fill"></i>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By LQC
+        </span>
+    </footer>
+
+    <!-- ===========================SCROLL UP================================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+    
+    <!-- ===========================SWIPER JS================================= -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- ===========================SCROLLREVEAL================================= -->
+    <script src="./js/scrollreveal.min.js"></script>
+    <!-- ===========================MAIN JS================================= -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="LaptopShop.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ================FAVICON - ICON WEBSITE================= -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- ================REMIXICON================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+
+    <!-- ================SWIPER CSS================= -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- ================MAIN CSS================= -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>VI GEAR</title>
+</head>
+<body runat="server">
+    <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- ================FOOTER================= -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="index.html" class="footer__logo">
+                    <i class="ri-book-3-line"></i> VI GEAR
+                </a>
+
+                <p class="footer__description">
+                    Tìm và khám phá công nghệ <br>
+                    Mẫu laptop đời mới <br>
+                    Gaming hay công việc <br>
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Giải Thưởng</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Chính Sách Bảo Mật</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Điều Khoản</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Blog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="" class="footer_link">Cộng Đồng</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Nhóm</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Trung Tâm Trợ Giúp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                TP. Hồ Chí Minh <br>
+                                Đường 3/2, Quận 10
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                pielysium@gmail.com <br>
+                                0356-991-750
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    
+                    <div class="footer_social">
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-discord-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-steam-fill"></i>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By LQC
+        </span>
+    </footer>
+    <!-- ===========================SCROLL UP================================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!-- ===========================SWIPER JS================================= -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- ===========================SCROLLREVEAL============================== -->
+    <script src="./js/scrollreveal.min.js"></script>
+    <!-- ===========================MAIN JS=================================== -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

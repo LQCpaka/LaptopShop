@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================FAVICON - ICON WEBSITE================= -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- ================REMIXICON================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!-- ================SWIPER CSS================= -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- ================MAIN CSS================= -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VI GEAR</title>
+</head>
+
+<body>
+    <!-- ================HEADER================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="ri-computer-line"></i> VI GEAR
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Trang Chủ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-macbook-line"></i>
+                            <span>Nổi Bật</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#dicount" class="nav__link">
+                            <i class="ri-price-tag-line"></i>
+                            <span>Giá</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-instance-line"></i>
+                            <span>Mới</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-menu-line"></i>
+                            <span>Loại</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search Button -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!-- Login Button -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+
+                <!-- Cart Button-->
+                <i class="ri-shopping-cart-line" id="cart-button">:1</i>
+
+                <!-- Theme Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================SEARCH================= -->
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon""></i>
+            <input type=" search" placeholder="Bạn muốn tìm kiếm sản phẩm nào?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+    <!-- ================LOGIN================= -->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Đăng Nhập</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" id="login-email" placeholder="Nhập email của bạn" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Mật Khẩu</label>
+                    <input type="password" placeholder="Nhập mật khẩu của bạn" id="login-pass" class="login__input">
+                </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    Chưa có tài khoản? <a href="#">Đăng Ký</a>
+                </span>
+                <a href="#" class="login__forgot">
+                    Quên mật khẩu
+                </a>
+
+                <button type="submit" href="#" class="login__button button">Đăng Nhập</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+
+
+    <!-- ================MAIN================= -->
+    <main class="main">
+        <section class="order section">
+            <div class="order__container container cart-page">
+                <!-- Product price -->
+                <table>
+                    <!-- Header -->
+                    <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Xóa</th>
+                        <th>Số Lượng</th>
+                        <th>Tổng Tiền</th>
+                    </tr>
+                    <!-- Row -->
+                    <tr>
+                        <td>
+                            <div class="cart__info">
+                                <img src="img/aa12.jpg" alt="image">
+                                <div>
+                                    <p>Acer Nitro 5 A12339</p>
+                                    <small>Price: $50.00</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href=""><i class="ri-delete-bin-line delete"></i></a> </td>
+                        <td><input class="order__input" type="number" value="1"></td>
+                        <td><p class="price">$50.00</p></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart__info">
+                                <img src="img/aa12.jpg" alt="image">
+                                <div>
+                                    <p>Acer Nitro 5 A12339</p>
+                                    <small>Price: $50.00</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href=""><i class="ri-delete-bin-line delete"></i></a> </td>
+                        <td><input class="order__input" type="number" value="1"></td>
+                        <td><p class="price">$50.00</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart__info">
+                                <img src="img/a1.jpeg" alt="image">
+                                <div>
+                                    <p>Acer Nitro 5 A12339</p>
+                                    <small>Price: $50.00</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href=""><i class="ri-delete-bin-line delete"></i></a> </td>
+                        <td><input class="order__input" type="number" value="1"></td>
+                        <td><p class="price">$50.00</p></td>
+                    </tr>
+                </table>
+                <!-- Total Price -->
+                <div class="total__price">
+                    <table>
+                        <tr>
+                            <td>Tổng Phụ</td>
+                            <td><p class="price">$50.00</p></td>
+                        </tr>
+                        <tr>
+                            <td>Giảm Giá</td>
+                            <td><p class="price">$50.00</p></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng Tiền</td>
+                            <td><p class="price">$50.00</p></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+
+
+    <!-- ================FOOTER================= -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="index.html" class="footer__logo">
+                    <i class="ri-book-3-line"></i> VI GEAR
+                </a>
+
+                <p class="footer__description">
+                    Tìm và khám phá công nghệ <br>
+                    Mẫu laptop đời mới <br>
+                    Gaming hay công việc <br>
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Awards</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Terms of servvices</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer_link">Blog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="" class="footer_link">Community</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Our Team</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer_link">Help center</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                Av. Hacienda <br>
+                                Lima 431, Peru
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                pielysium@gmail.com <br>
+                                0356-991-750
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+
+                    
+                    <div class="footer_social">
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-discord-line"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-steam-fill"></i>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By LQC
+        </span>
+    </footer>
+
+    <!-- ===========================SCROLL UP================================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+    
+    <!-- ===========================SWIPER JS================================= -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- ===========================SCROLLREVEAL================================= -->
+    <script src="./js/scrollreveal.min.js"></script>
+    <!-- ===========================MAIN JS================================= -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
