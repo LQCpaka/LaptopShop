@@ -114,6 +114,7 @@
     <Content Include="OriginLayout\productdetail.html" />
     <Content Include="product.aspx" />
     <Content Include="productdetail.aspx" />
+    <Content Include="SQLQuery\laptopgear.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
