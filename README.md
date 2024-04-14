@@ -27,6 +27,7 @@
 ## Thông tin chi tiết về back-end (Tiến độ ?)
 
 - **Database đã được dựng lên tương đối ổn định(hiện tại chưa thấy phát sinh lỗi về mặt logic)**
+- **Có thể load dữ liệu từ trong databse ra giao diện, xem chi tiết từng sản phẩm**
 - **Đã xong login, dùng được hoàn toàn, nhưng lúc push lên somee, mặc dù có thay hết connection string nhưng vẫn có cái lỗi not find SQL server ? Mặc dù các dữ liệu sản phẩm đều có thể load ra hoàn toàn?**
 - **Dashboard: Chưa có, nơi xem các dữ liệu, up thêm dữ liệu, thêm sửa xóa**
 
