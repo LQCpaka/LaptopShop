@@ -15,7 +15,8 @@
 - **Giao diện tối, sáng là do sử dụng 1 bộ color pallet(có tham khảo), set thành root, và dựa vào js để xử lý, khi nhấn vào sáng, thì sẽ thay thành các var(color name từ root)**
 - **Dashboard, product: Do thiếu thời gian nên chưa hoàn thiện được, dashboard thì chưa có**
 
-> [!NOTE] **Cách mà mình dựng giao diện?**
+> [!NOTE]
+> **Cách mà mình dựng giao diện?**
 > Code giao diện ngoài trước rồi mới đem giao diện vào dự án rồi dựa vào đó config lại cho phù hợp với framework, do ASP thiết kế khá tệ về mặt xử lý giao diện + bản thân Visual Studio rất nặng và đôi khi lỗi vặt. Nên mình code ngoài VSC trước, dùng live server để dễ làm quen giao diện.
 
 
@@ -25,7 +26,8 @@
 -**Đã xong login, dùng được hoàn toàn, nhưng lúc push lên somee, mặc dù có thay hết connection string nhưng vẫn có cái lỗi not find SQL server ? Mặc dù các dữ liệu sản phẩm đều có thể load ra hoàn toàn?**
 -**Dashboard: Chưa có, nơi xem các dữ liệu, up thêm dữ liệu, thêm sửa xóa**
 
-> [!NOTE] **Lý do chưa xong?**
+> [!NOTE]
+> **Lý do chưa xong?**
 > Do vừa phải đi học, đi thi, đi làm, còn dính thêm quả đi quân khu, nên không thể chạy hết được. Mọi người thông cảm.
 
 
