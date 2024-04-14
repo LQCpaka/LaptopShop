@@ -3,59 +3,24 @@
     <!-- ================HEADER================= -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="index.aspx" class="nav__logo">
                 <i class="ri-computer-line"></i> VI GEAR
             </a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="ri-home-line"></i>
-                            <span>Trang Chủ</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#featured" class="nav__link">
-                            <i class="ri-macbook-line"></i>
-                            <span>Nổi Bật</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#dicount" class="nav__link">
-                            <i class="ri-price-tag-line"></i>
-                            <span>Giá</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#new" class="nav__link">
-                            <i class="ri-instance-line"></i>
-                            <span>Mới</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#testimonial" class="nav__link">
-                            <i class="ri-menu-line"></i>
-                            <span>Loại</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+            
+           
 
             <div class="nav__actions">
                 <!-- Search Button -->
                 <i class="ri-search-line search-button" id="search-button"></i>
 
                 <!-- Login Button -->
-                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-user-line login-button" id="login-button">
+                    <asp:Label ID="txtEmailUser" CssClass="login--infor" runat="server" Text=""></asp:Label>
+                </i>
 
                 <!-- Cart Button-->
-                <i class="ri-shopping-cart-line" id="cart-button">:1</i>
+                <i class="ri-shopping-cart-line" id="cart-button"> </i>
 
                 <!-- Theme Button -->
                 <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -74,29 +39,30 @@
     </div>
     <!-- ================LOGIN================= -->
     <div class="login grid" id="login-content">
-        <form action="" class="login__form grid">
+        <form class="login__form grid" runat="server">
             <h3 class="login__title">Đăng Nhập</h3>
 
             <div class="login__group grid">
                 <div>
                     <label for="login-email" class="login__label">Email</label>
-                    <input type="email" id="login-email" placeholder="Nhập email của bạn" class="login__input">
+                    <asp:TextBox ID="loginEmail" runat="server" CssClass="login__input" placeholder="Nhập email của bạn" TextMode="Email" />
                 </div>
-
                 <div>
                     <label for="login-pass" class="login__label">Mật Khẩu</label>
-                    <input type="password" placeholder="Nhập mật khẩu của bạn" id="login-pass" class="login__input">
+                    <asp:TextBox ID="loginPass" runat="server" CssClass="login__input" placeholder="Nhập mật khẩu của bạn" TextMode="Password" />
                 </div>
             </div>
             <div>
+                <asp:Label ID="txtthongbao" runat="server" Text=""></asp:Label>
                 <span class="login__signup">
                     Chưa có tài khoản? <a href="#">Đăng Ký</a>
                 </span>
                 <a href="#" class="login__forgot">
                     Quên mật khẩu
                 </a>
-
-                <button type="submit" href="#" class="login__button button">Đăng Nhập</button>
+                <asp:Button ID="btnLogin" CssClass="button" runat="server" Text="Đăng Nhập" OnClick="btnLogin_Click" />
+                <%--<asp:Button ID="btnLogin" runat="server" Text="Đăng Nhập" CssClass="login__input button"   />--%>
+                <%--<button type="submit" href="#" class="login__button button">Đăng Nhập</button>--%>
             </div>
         </form>
 

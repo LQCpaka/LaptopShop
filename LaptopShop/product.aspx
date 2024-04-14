@@ -14,7 +14,9 @@
                 <i class="ri-search-line search-button" id="search-button"></i>
 
                 <!-- Login Button -->
-                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-user-line login-button" id="login-button">
+                    <asp:Label ID="txtEmailUser" CssClass="login--infor" runat="server" Text=""></asp:Label>
+                </i>
 
                 <!-- Cart Button-->
                 <a href="order.aspx"><i class="ri-shopping-cart-line" id="cart-button">:1</i></a>
@@ -36,29 +38,30 @@
     </div>
     <!-- ================LOGIN================= -->
     <div class="login grid" id="login-content">
-        <form action="" class="login__form grid">
+        <form class="login__form grid" runat="server">
             <h3 class="login__title">Đăng Nhập</h3>
 
             <div class="login__group grid">
                 <div>
                     <label for="login-email" class="login__label">Email</label>
-                    <input type="email" id="login-email" placeholder="Nhập email của bạn" class="login__input">
+                    <asp:TextBox ID="loginEmail" runat="server" CssClass="login__input" placeholder="Nhập email của bạn" TextMode="Email" />
                 </div>
-
                 <div>
                     <label for="login-pass" class="login__label">Mật Khẩu</label>
-                    <input type="password" placeholder="Nhập mật khẩu của bạn" id="login-pass" class="login__input">
+                    <asp:TextBox ID="loginPass" runat="server" CssClass="login__input" placeholder="Nhập mật khẩu của bạn" TextMode="Password" />
                 </div>
             </div>
             <div>
+                <asp:Label ID="txtthongbao" runat="server" Text=""></asp:Label>
                 <span class="login__signup">
                     Chưa có tài khoản? <a href="#">Đăng Ký</a>
                 </span>
                 <a href="#" class="login__forgot">
                     Quên mật khẩu
                 </a>
-
-                <button type="submit" href="#" class="login__button button">Đăng Nhập</button>
+                <asp:Button ID="btnLogin" CssClass="button" runat="server" Text="Đăng Nhập" OnClick="btnLogin_Click" />
+                <%--<asp:Button ID="btnLogin" runat="server" Text="Đăng Nhập" CssClass="login__input button"   />--%>
+                <%--<button type="submit" href="#" class="login__button button">Đăng Nhập</button>--%>
             </div>
         </form>
 
@@ -74,55 +77,23 @@
                 <p>Sản Phẩm ></p>
             </div>
         </section>
-        <div class="category__container container grid">
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
-            <div class="box">
-                <img class="product__img" src="img/aa12.jpg" alt="">
-                <h3 class="product__title">Sản Phẩm 1</h3>
-                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis veritatis impedit iste vitae excepturi?</p>
-                <a href="productdetail.aspx" class="button">Thểm Vào Giỏ</a>
-            </div>
+        <div class="category__container grid container ">
+            <asp:Repeater ID="rpProduct" runat="server" DataSourceID="dsProducts">
+                <ItemTemplate>
+                    <div class="box">
+                        <img class="category__img" src="img/laptop/<%# Eval("ImageUrl") %>" alt="">
+                        <h3 class="product__title"><%# Eval("NameProduct") %></h3>
+                        <p class="product__description"><%# Eval("Price") %></p>
+                        <a href="productdetail.aspx?ProductID=<%# Eval("ProductID") %>" class="button">Thêm Vào Giỏ</a>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
     </main>
+
+    <asp:SqlDataSource ID="dsProducts" runat="server" 
+    ConnectionString="<%$ ConnectionStrings:LaptopShopConnectionString %>" 
+    ProviderName="<%$ ConnectionStrings:LaptopShopConnectionString.ProviderName %>" 
+    SelectCommand="SELECT * FROM [Products]">
+</asp:SqlDataSource>
 </asp:Content>

@@ -408,6 +408,8 @@ body.dark-theme {
     cursor: pointer;
 }
 
+
+
 /* Show login */
 
 .show-login {
@@ -802,9 +804,11 @@ body.dark-theme {
 
 .category__container {
     margin-top: 100px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0.5fr);
 }
-
+img .category__img {
+    height: 10000rem;
+}
 .box {
     text-align: center;
     background-color: var(--container-color);
@@ -851,6 +855,8 @@ th {
     background-color: var(--first-color);
     color: var(--white-color);
 }
+
+
 /*=======================Product===================*/
 .productdetail__table {
     border-collapse: collapse;

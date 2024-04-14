@@ -14,7 +14,9 @@
                 <i class="ri-search-line search-button" id="search-button"></i>
 
                 <!-- Login Button -->
-                <i class="ri-user-line login-button" id="login-button"></i>
+                <i class="ri-user-line login-button" id="login-button">
+                    <asp:Label ID="txtEmailUser" CssClass="login--infor" runat="server" Text=""></asp:Label>
+                </i>
 
                 <!-- Cart Button-->
                 <a href="order.aspx"><i class="ri-shopping-cart-line" id="cart-button">:1</i></a>
@@ -36,29 +38,30 @@
     </div>
     <!-- ================LOGIN================= -->
     <div class="login grid" id="login-content">
-        <form action="submit" class="login__form grid">
+        <form class="login__form grid" runat="server">
             <h3 class="login__title">Đăng Nhập</h3>
 
             <div class="login__group grid">
                 <div>
                     <label for="login-email" class="login__label">Email</label>
-                    <input type="email" id="login-email" placeholder="Nhập email của bạn" class="login__input">
+                    <asp:TextBox ID="loginEmail" runat="server" CssClass="login__input" placeholder="Nhập email của bạn" TextMode="Email" />
                 </div>
-
                 <div>
                     <label for="login-pass" class="login__label">Mật Khẩu</label>
-                    <input type="password" placeholder="Nhập mật khẩu của bạn" id="login-pass" class="login__input">
+                    <asp:TextBox ID="loginPass" runat="server" CssClass="login__input" placeholder="Nhập mật khẩu của bạn" TextMode="Password" />
                 </div>
             </div>
             <div>
+                <asp:Label ID="txtthongbao" runat="server" Text=""></asp:Label>
                 <span class="login__signup">
                     Chưa có tài khoản? <a href="#">Đăng Ký</a>
                 </span>
                 <a href="#" class="login__forgot">
                     Quên mật khẩu
                 </a>
-
-                <button type="submit" href="#" class="login__button button">Đăng Nhập</button>
+                <asp:Button ID="btnLogin" CssClass="button" runat="server" Text="Đăng Nhập" OnClick="btnLogin_Click" />
+                <%--<asp:Button ID="btnLogin" runat="server" Text="Đăng Nhập" CssClass="login__input button"   />--%>
+                <%--<button type="submit" href="#" class="login__button button">Đăng Nhập</button>--%>
             </div>
         </form>
 
