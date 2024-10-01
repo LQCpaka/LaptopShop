@@ -4,7 +4,7 @@
 > Dự án hoàn toàn solo, từ front cho tới back-end.
 > **Người làm: Lê Quốc Cần**
 
-![project](https://media.discordapp.net/attachments/1150982426747752518/1229085408705646683/image.png?ex=662e65fc&is=661bf0fc&hm=f3e54e371c3231b0b8c01359108d164698f5683d3b2bad2da47be9a262fb38dc&=&format=webp&quality=lossless&width=700&height=500)
+![igmur](https://github.com/user-attachments/assets/4cf2fee0-4abc-4273-b5bb-d4a114597edf)
 # Thông tin dự án
 
 ## Công nghệ
